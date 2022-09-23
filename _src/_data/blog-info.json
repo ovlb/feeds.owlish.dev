@@ -1,1 +1,15 @@
-[]
+[
+  {
+    "name": "Ada Lovelace Institute",
+    "cache_name": "ada_lovelace",
+    "parserInfo": {
+      "url": "https://www.adalovelaceinstitute.org/blog/",
+      "elements": {
+        "posts": "article.c-listing__item",
+        "postTitle": ".c-card__title",
+        "postURL": ".c-card__title",
+        "postDate": ".c-card__extra-meta"
+      }
+    }
+  }
+]
