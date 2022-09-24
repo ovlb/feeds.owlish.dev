@@ -3,9 +3,13 @@ const { schedule } = require('@netlify/functions')
 
 const { BUILD_HOOK } = process.env
 
-if (!BUILD_HOOK) return
+if (!BUILD_HOOK) {
+  console.log('No build hook.')
+  console.log(process.env)
+  return
+}
 
-const handler = schedule('30 * * * *', async () => {
+const handler = schedule('* * * * *', async () => {
   const { data } = await got.post(BUILD_HOOK)
 
   console.log(data)
