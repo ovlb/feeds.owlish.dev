@@ -1,4 +1,5 @@
 const blogParser = import('@inframanufaktur/blog-parser')
+const Image = require('@11ty/eleventy-img')
 
 const { setCache, getCache, makeCacheName } = require('./_utils/cache')
 
@@ -43,6 +44,20 @@ module.exports = async function () {
       console.groupEnd()
     }
 
+    if (content.meta.icon) {
+      const parsed = await Image(content.meta.icon.href.href, {
+        width: [null],
+        formats: ['jpeg'],
+        urlPath: '/icons/',
+        outputDir: './dist/icons/',
+        cacheOptions: {
+          duration: '*',
+        },
+      })
+
+      content.meta.icon.parsedIcon = parsed.jpeg[0].url
+    }
+
     for (const post of content.posts) {
       if (post.date === null) {
         post.date = new Date()
@@ -57,7 +72,7 @@ module.exports = async function () {
       ...blog,
       ...content,
       uniqueName,
-      posts: distinctPosts.sort((a, b) => a.date < b.date),
+      posts: distinctPosts.sort((a, b) => b.date - a.date),
     })
   }
 
