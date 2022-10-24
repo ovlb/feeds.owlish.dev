@@ -49,5 +49,18 @@
         "postIntro": "p"
       }
     }
+  },
+  {
+    "name": "DeepL",
+    "parserInfo": {
+      "url": "https://www.deepl.com/en/blog",
+      "elements": {
+        "posts": ".blogPost-module--article--qS0Wa",
+        "postTitle": "h2",
+        "postURL": "h2 a",
+        "postDate": "time",
+        "postIntro": "p:first-of-type"
+      }
+    }
   }
 ]
