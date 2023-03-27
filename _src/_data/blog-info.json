@@ -13,18 +13,6 @@
     }
   },
   {
-    "name": "Open Mind Mag",
-    "parserInfo": {
-      "url": "https://www.openmindmag.org/",
-      "elements": {
-        "posts": "#maincontent article",
-        "postTitle": "h2",
-        "postURL": "h2 > .no-underline",
-        "postDate": null
-      }
-    }
-  },
-  {
     "name": "Gizmodo Tech News",
     "parserInfo": {
       "url": "https://gizmodo.com/tech/news",
