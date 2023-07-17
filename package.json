@@ -25,7 +25,8 @@
     "eslint": "^8.23.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "html-escaper": "^3.0.3"
+    "html-escaper": "^3.0.3",
+    "netlify-plugin-cache": "^1.0.3"
   },
   "11ty": {
     "compatbility": ">=2.0.0"
