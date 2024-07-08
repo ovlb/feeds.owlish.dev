@@ -1,19 +1,5 @@
 [
   {
-    "name": "Today in Tabs",
-    "cache_name": "today_in_tabs",
-    "parserInfo": {
-      "url": "https://www.todayintabs.com/",
-      "elements": {
-        "posts": ".grid.grid-cols-1.gap-6 > .group.h-full",
-        "postTitle": "h2",
-        "postURL": ".group.h-full",
-        "postDate": "time",
-        "postIntro": "p.font-helvetica"
-      }
-    }
-  },
-  {
     "name": "Ada Lovelace Institute",
     "cache_name": "ada_lovelace",
     "parserInfo": {
