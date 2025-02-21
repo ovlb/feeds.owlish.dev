@@ -8,7 +8,8 @@
         "posts": "article.c-listing__item",
         "postTitle": ".c-card__title",
         "postURL": ".c-card__title",
-        "postDate": ".c-card__extra-meta"
+        "postDate": ".c-card__extra-meta",
+        "postIntro": ".c-card__excerpt"
       }
     }
   },
@@ -17,7 +18,7 @@
     "parserInfo": {
       "url": "https://gizmodo.com/tech/politics",
       "elements": {
-        "posts": "main ul li div",
+        "posts": "main ul li",
         "postTitle": "h2",
         "postURL": "a",
         "postDate": "time",
@@ -30,7 +31,7 @@
     "parserInfo": {
       "url": "https://gizmodo.com/tech/artificial-intelligence",
       "elements": {
-        "posts": "main ul li div",
+        "posts": "main ul li",
         "postTitle": "h2",
         "postURL": "a",
         "postDate": "time",
